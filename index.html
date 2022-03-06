@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - weather app  openWeather API</title>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+  <input type="text" id="input" placeholder="enter city"/>
+  <div class="more">
+    <div class="close">
+      <ion-icon id="close" name="close-circle"></ion-icon>
+    </div>
+    <div class="rows">
+    <div class="box">
+      
+      <p id="feels-like">feels like</p>
+      <img src="https://github.com/AnnaSmith3110/openWeather-API/blob/main/hot%20cold%20png.png?raw=true" id="icon">
+      
+    </div>
+     <div class="box">
+       
+       <p id="rain">rain</p>
+       <img src="https://github.com/AnnaSmith3110/openWeather-API/blob/main/umbrella%20png.png?raw=true" id="icon">
+     </div>
+    </div>
+     <div class="rows">
+    <div class="box">
+      
+      <p id="wind-speed">wind</p>
+      <img src="https://github.com/AnnaSmith3110/openWeather-API/blob/main/wind%20direction%20png.png?raw=true" id="icon">
+      
+    </div>
+     <div class="box">
+       
+       <p id="visibility">visibility</p>
+       <img src="https://github.com/AnnaSmith3110/openWeather-API/blob/main/visibility%20png.png?raw=true" id="icon">
+     </div>
+    </div>
+  </div>
+  <div class="description">
+    <p id="desc"></p>
+  </div>
+  <div class="icon">
+    <img src ="https://github.com/AnnaSmith3110/openWeather-API/blob/main/sunny%20png.png?raw=true" id="weather-status-icon">
+  </div>
+  <div class="temperature">
+    <p>weather</p>
+    <h id="temp">t °c</h>
+  </div>
+  <div class="additional-info">
+    <div class="cube">
+      <div class="row">
+      <p>humidity</p>
+      </div>
+      <div class="row">
+        <img src= "https://github.com/AnnaSmith3110/openWeather-API/blob/main/drop%20png.png?raw=true" id="cube-img">
+      </div>
+      <div class="row">
+        <p1 id="humidity">humid</p1>
+      </div>
+    </div>
+    <div class="cube">
+       <div class="row">
+      <p>wind</p>
+         </div>
+       <div class="row">
+      <img src="https://github.com/AnnaSmith3110/openWeather-API/blob/main/wind%20png.png?raw=true" id="cube-img">
+      </div>
+      <div class="row">
+        <p1 id="wind">wind</p1>
+      </div>
+    </div>
+    <div class="cube">
+      <ion-icon id="more" name="chevron-up"></ion-icon>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

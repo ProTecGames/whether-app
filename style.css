@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+:root {
+  --bg: #feecfc;
+  --snow: #7d39ff;
+  --snow-text: #ffebff;
+  --rain: #0181ff;
+  --rain-text: #c6f2ff;
+  --sunny: #fc8600;
+  --sunny-text: #fff9e9;
+  --hazy: #585344;
+  --clear: #988e34;
+  --cloudy: #909da2;
+  --misty: #7dada8;
+  --smoke: #9c4462;
+  --input-valid: #1c1d21;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100vh;
+  width: 100vw;
+  padding:0;
+  margin:0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oxygen', sans-serif;
+  background: var(--bg);
+}
+ion-icon {
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--sunny-text);
+}
+#more {
+  background: var(--input-valid);
+  -webkit-box-shadow: 1px 4px 10px 2px #1C1D21; 
+box-shadow: 1px 4px 10px 2px #1C1D21;
+  border-radius: 50%;
+  padding: 5px;
+}
+#close {
+  color: var(--input-valid);
+  font-size: 2em;
+  margin-left: auto;
+  padding: 20px;
+}
+h, p {
+  padding-left: 20px;
+}
+h {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--sunny-text);
+  text-transform: uppercase;
+}
+p {
+  font-size: 1em;
+  color: var(--sunny-text);
+}
+p1 {
+  font-size: 0.7em;
+  color: var(--sunny-text);
+}
+p::first-letter {
+  text-transform: uppercase;
+}
+#weather-status-icon {
+  height: 150px;
+  width: auto;
+}
+.app {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+  background: var(--sunny);
+}
+input, input:focus, input:valid {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  outline:0;
+  border:0;
+  background: transparent;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--sunny-text);
+  font-family: 'Oxygen', sans-serif;
+}
+input::placeholder {
+  color: var(--sunny-text);
+  padding: 20px;
+  letter-spacing: 2px;
+  font-family: 'Oxygen', sans-serif;
+}
+input:valid {
+  background: var(--input-valid);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 50px var(--input-valid)  inset !important;
+}
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: var(--sunny-text) !important;
+  -webkit-text-fill-background: var(--input-valid);
+}
+.description {
+  width: 30%;
+  height: 100px;
+}
+.description p {
+  display:table-caption;
+}
+.icon {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temperature {
+  width: 50%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.additional-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.cube {
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+}
+.cube p {
+  padding-left: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+#cube-img, .cube-img {
+  height: 30px;
+  width: 30px;
+}
+.row {
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/*more info*/
+.more {
+  margin-top: 70px;
+  height: 430px;
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.close {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: row-reverse;
+  align-items: center;
+}
+.rows {
+  height: 150px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 4px 10px 2px #1C1D21; 
+box-shadow: 1px 4px 10px 2px #1C1D21;
+  background: var(--input-valid);
+  color: var(--sunny-text);
+}
+.box>p {
+  font-size: 0.9em;
+}
+#icon {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
